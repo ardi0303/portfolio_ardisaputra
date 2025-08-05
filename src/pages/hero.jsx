@@ -1,10 +1,20 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <div
       className="container flex min-h-screen w-full items-center justify-center"
       id="hero"
     >
-      <div className="dark-text space-y-8 text-center">
+      <motion.div
+        className="dark-text space-y-8 text-center"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          translateY: -20,
+          transition: { duration: 0.5 },
+        }}
+      >
         <div className="space-y-2 text-center">
           <h1 className="font-titan-one text-3xl md:text-4xl lg:text-5xl">
             Hey! 👋
@@ -24,7 +34,7 @@ export default function Hero() {
         <button className="hover:transform-y font-jakarta-sans dark-button rounded-xl px-6 py-2 text-xs font-semibold md:px-8 md:py-3 md:text-base lg:px-10 lg:py-4 lg:text-lg">
           PROJECTS
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 }

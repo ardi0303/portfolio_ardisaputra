@@ -7,11 +7,11 @@ export default function Hero() {
       id="hero"
     >
       <motion.div
-        className="dark-text space-y-8 text-center"
-        initial={{ opacity: 0 }}
+        className="dark-text mt-20 space-y-8 py-24 text-center"
+        initial={{ opacity: 0, translateY: 20 }}
         animate={{
           opacity: 1,
-          translateY: -20,
+          translateY: 0,
           transition: { duration: 0.5 },
         }}
       >

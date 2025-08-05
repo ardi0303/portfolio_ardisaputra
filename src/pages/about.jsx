@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -39,7 +40,7 @@ export default function About() {
             translateY: -20,
             transition: { duration: 0.5 },
           }}
-          viewport={{ amount: "all" }}
+          viewport={{ amount: 0.5 }}
         >
           <div className="font-titan-one dark-title text-3xl underline underline-offset-8 md:text-4xl lg:text-5xl">
             <h1 className="">ABOUT ME</h1>

@@ -28,16 +28,15 @@ export default function About() {
   ];
   return (
     <div
-      className="container flex min-h-screen w-full items-center justify-center"
+      className="container flex min-h-screen w-full items-center justify-center py-8"
       id="about"
     >
       <div className="dark-text font-jakarta-sans space-y-16">
         <motion.div
           className="space-y-8 text-center"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0, translateY: 20 }}
           whileInView={{
             opacity: 1,
-            translateY: -20,
             transition: { duration: 0.5 },
           }}
           viewport={{ amount: 0.5 }}
@@ -54,10 +53,9 @@ export default function About() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <motion.div
             className="space-y-4"
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 0, translateY: 20 }}
             whileInView={{
               opacity: 1,
-              translateY: -20,
               transition: { duration: 0.5 },
             }}
             viewport={{ amount: 0.5 }}
@@ -75,10 +73,9 @@ export default function About() {
           </motion.div>
           <motion.div
             className="space-y-4"
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 0, translateY: 20 }}
             whileInView={{
               opacity: 1,
-              translateY: -20,
               transition: { duration: 0.5 },
             }}
             viewport={{ amount: 0.5 }}

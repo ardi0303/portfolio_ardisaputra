@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/navbar";
 import Hero from "./hero";
 import About from "./about";
+import Project from "./project";
 
 export default function Index() {
   return (
@@ -8,6 +9,7 @@ export default function Index() {
       <Navbar />
       <Hero />
       <About />
+      <Project />
     </div>
   );
 }

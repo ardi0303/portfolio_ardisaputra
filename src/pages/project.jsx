@@ -20,15 +20,15 @@ export default function Project() {
       image: imgProject2,
     },
     {
-      title: "Project Three",
+      title: "Dian Nuswantoro University Collaboration (Admin)",
       description:
-        "A brief description of the project, highlighting its main features and technologies used.",
+        "A web-based internal system built for universities to manage institutional partnerships through structured handling of MoU, MoA, and IA agreements. The platform offers features for administrators to monitor collaboration statuses, upload and update agreement documents, and organize activities under each agreement in a centralized dashboard.",
       image: imgProject3,
     },
     {
-      title: "Project Four",
+      title: "Dian Nuswantoro University Collaboration (Landing Page)",
       description:
-        "A brief description of the project, highlighting its main features and technologies used.",
+        "A clean and responsive landing page designed to introduce the university's collaboration platform to the public. It highlights key features, outlines types of partnerships (MoU, MoA, IA), and guides potential partners through the process of initiating collaborations. Built with accessibility and informative structure in mind.",
       image: imgProject4,
     },
   ];
@@ -57,29 +57,37 @@ export default function Project() {
         </motion.div>
         <div className="space-y-20">
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              className="grid grid-cols-1 gap-8 lg:grid-cols-2"
-              initial={{ opacity: 0, translateY: 20 }}
-              whileInView={{
-                opacity: 1,
-                transition: { duration: 0.5 },
-              }}
-              viewport={{ amount: 0.5 }}
-            >
-              <img src={project.image} alt={project.title} />
-              <div className="space-y-4 text-center lg:text-left">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, translateY: 20 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 0.5 },
+                }}
+                viewport={{ amount: 0.5 }}
+              >
+                <img src={project.image} alt={project.title} />
+              </motion.div>
+              <motion.div
+                key={index}
+                className="space-y-4 text-center lg:text-left"
+                initial={{ opacity: 0, translateY: 20 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 0.5 },
+                }}
+                viewport={{ amount: 0.5 }}
+              >
                 <h2 className="text-lg font-bold md:text-xl lg:text-2xl">
                   {project.title}
                 </h2>
-                <p className="text-sm md:text-base lg:text-lg">
-                  {project.description}
-                </p>
+                <p className="text-sm md:text-base">{project.description}</p>
                 <button className="hover:transform-y font-jakarta-sans dark-button rounded-xl px-6 py-2 text-xs font-semibold md:text-base lg:px-8 lg:py-2 lg:text-lg">
                   View Project
                 </button>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           ))}
         </div>
       </div>

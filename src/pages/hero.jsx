@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 export default function Hero() {
   return (
     <div
@@ -31,9 +32,11 @@ export default function Hero() {
           Front-End and Back-End development, complemented by a sharp attention
           to UI/UX design.
         </p>
-        <button className="hover:transform-y font-jakarta-sans dark-button rounded-xl px-6 py-2 text-xs font-semibold md:px-8 md:py-3 md:text-base lg:px-10 lg:py-4 lg:text-lg">
-          PROJECTS
-        </button>
+        <Link to="projects" smooth={true}>
+          <button className="font-jakarta-sans dark-button rounded-xl px-6 py-2 text-xs font-semibold md:px-8 md:py-3 md:text-base lg:px-10 lg:py-4 lg:text-lg">
+            PROJECTS
+          </button>
+        </Link>
       </motion.div>
     </div>
   );

@@ -98,7 +98,7 @@ export default function Navbar() {
           </li>
           <li className="nav-item">
             <Link
-              to="contact"
+              to="contacts"
               smooth={true}
               className="nav-link cursor-pointer text-[16px] transition-all duration-500 ease-in-out hover:font-bold md:text-sm"
             >

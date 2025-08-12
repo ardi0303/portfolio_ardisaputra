@@ -68,7 +68,7 @@ export default function Certificate() {
             the field of technology.
           </p>
         </motion.div>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-16">
           {certificates.map((certificate, index) => (
             <motion.div
               key={index}

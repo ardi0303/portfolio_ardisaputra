@@ -3,6 +3,8 @@ import Hero from "./hero";
 import About from "./about";
 import Project from "./project";
 import Certificate from "./certificate";
+import Contact from "./contact";
+import Footer from "@/components/layouts/footer";
 
 export default function Index() {
   return (
@@ -12,6 +14,8 @@ export default function Index() {
       <About />
       <Project />
       <Certificate />
+      <Contact />
+      <Footer />
     </div>
   );
 }

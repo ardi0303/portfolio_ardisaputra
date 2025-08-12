@@ -14,11 +14,11 @@ export default function Footer() {
             attention to UI/UX design.
           </p>
         </div>
-        <div className="space-y-4 text-right">
+        <div className="space-y-4 text-left lg:text-right">
           <h1 className="font-titan-one text-xl font-extralight md:text-2xl lg:text-3xl">
             SOCIAL
           </h1>
-          <div className="flex justify-end gap-4">
+          <div className="flex justify-start gap-4 lg:justify-end">
             <a href="mailto:ardi210303@gmail.com">
               <Mail className="h-6 w-6" />
             </a>

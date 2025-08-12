@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="font-jakarta-sans bg-teal-200 transition-colors duration-300 dark:bg-[#012120]">
-      <div className="container flex justify-between border-b-2 border-teal-300 py-12 dark:border-teal-900">
+      <div className="container grid grid-cols-1 gap-4 border-b-2 border-teal-300 py-12 lg:grid-cols-2 dark:border-teal-900">
         <div className="space-y-4">
           <h1 className="font-titan-one text-xl font-extralight md:text-2xl lg:text-3xl">
             ARDI SAPUTRA
@@ -14,11 +14,11 @@ export default function Footer() {
             attention to UI/UX design.
           </p>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-4 text-right">
           <h1 className="font-titan-one text-xl font-extralight md:text-2xl lg:text-3xl">
             SOCIAL
           </h1>
-          <div className="flex gap-4">
+          <div className="flex justify-end gap-4">
             <a href="mailto:ardi210303@gmail.com">
               <Mail className="h-6 w-6" />
             </a>

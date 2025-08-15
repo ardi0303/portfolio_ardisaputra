@@ -5,32 +5,25 @@ import logo from "@/assets/img/myphoto.jpeg";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (localStorage.theme === "dark") return true;
+    if (localStorage.theme === "light") return false;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches || true; // default dark
+  });
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  // Toggle dark mode
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    if (!darkMode) {
+  useEffect(() => {
+    if (darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  };
+  }, [darkMode]);
 
-  // Cek preferensi user di localStorage
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setDarkMode(true);
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
+  const toggleDarkMode = () => {
+    setDarkMode((prev) => !prev);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,6 +39,10 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <nav

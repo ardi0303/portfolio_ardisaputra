@@ -89,7 +89,7 @@ export default function About() {
                 );
               })}
             </div>
-            <button className="font-jakarta-sans dark-button rounded-xl px-6 py-2 text-xs font-semibold md:text-base">
+            <button className="font-jakarta-sans dark-button rounded-xl px-6 py-2 text-xs font-semibold md:px-8 md:py-2 md:text-base">
               <a
                 href="https://drive.google.com/file/d/1VegzE_5euBCLiUuTxFYxKqt9F17TS0Cn/"
                 target="_blank"

@@ -63,13 +63,40 @@ export default function About() {
             <h2 className="text-lg font-bold md:text-xl lg:text-2xl">
               Who Am I?
             </h2>
-            <div className="space-y-2">
-              {aboutTexts.map((text, index) => (
-                <p key={index} className="text-sm md:text-base">
-                  {text}
-                </p>
-              ))}
+            <div className="space-y-4">
+              {aboutTexts.map((text, index) => {
+                if (text.includes("LinkedIn")) {
+                  const parts = text.split("LinkedIn");
+                  return (
+                    <p key={index} className="text-sm md:text-base">
+                      {parts[0]}
+                      <a
+                        href="https://www.linkedin.com/in/ardi-saputra-b49785279/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:underline"
+                      >
+                        LinkedIn
+                      </a>
+                      {parts[1]}
+                    </p>
+                  );
+                }
+                return (
+                  <p key={index} className="text-sm md:text-base">
+                    {text}
+                  </p>
+                );
+              })}
             </div>
+            <button className="font-jakarta-sans dark-button rounded-xl px-6 py-2 text-xs font-semibold md:text-base lg:px-8 lg:py-2">
+              <a
+                href="https://drive.google.com/file/d/1VegzE_5euBCLiUuTxFYxKqt9F17TS0Cn/"
+                target="_blank"
+              >
+                My CV
+              </a>
+            </button>
           </motion.div>
           <motion.div
             className="space-y-4"

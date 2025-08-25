@@ -71,6 +71,7 @@ export default function Contact() {
             <div className="space-y-2">
               <label className="block">Name</label>
               <input
+                required
                 type="text"
                 name="name"
                 placeholder="Your Name"
@@ -80,6 +81,7 @@ export default function Contact() {
             <div className="space-y-2">
               <label className="block">Email</label>
               <input
+                required
                 type="email"
                 name="email"
                 placeholder="Your Email"
@@ -89,6 +91,7 @@ export default function Contact() {
             <div className="space-y-2">
               <label className="block">Message</label>
               <textarea
+                required
                 name="message"
                 placeholder="Your Message"
                 className="h-32 w-full rounded-md border bg-gray-300 p-2 dark:bg-gray-700"

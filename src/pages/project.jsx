@@ -33,7 +33,7 @@ export default function Project() {
       description:
         "A clean and responsive landing page designed to introduce the university's collaboration platform to the public. It highlights key features, outlines types of partnerships (MoU, MoA, IA), and guides potential partners through the process of initiating collaborations. Built with accessibility and informative structure in mind.",
       image: imgProject4,
-      link: "https://kui-landing-cooperation.vercel.app/",
+      link: "https://lkui-landing-cooperation.vercel.app/",
     },
   ];
   return (

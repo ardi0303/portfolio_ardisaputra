@@ -90,7 +90,7 @@ export default function About() {
               })}
             </div>
             <a
-              href="https://drive.google.com/file/d/1VegzE_5euBCLiUuTxFYxKqt9F17TS0Cn/"
+              href="https://drive.google.com/file/d/1OqkteiuFcdM3PmYvFWuG36SVvjCutvHF/"
               target="_blank"
               className="font-jakarta-sans dark-button inline-block rounded-xl px-6 py-2 text-xs font-semibold md:px-8 md:py-2 md:text-base"
             >

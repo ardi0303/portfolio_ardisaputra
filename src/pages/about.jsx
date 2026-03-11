@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   const aboutTexts = [
-    "Welcome! I'm a dedicated Full Stack Engineer specializing in Front-End Development with React.js and Back-End Development with Laravel & CodeIgniter PHP. With a Bachelor's degree in Informatics Engineering, I'm always driven to explore new possibilities and push the boundaries of technology.",
+    "Welcome! I'm a dedicated Full Stack Engineer specializing in Front-End Development with React and Back-End Development with Laravel. With a Bachelor's degree in Informatics Engineering, I'm always driven to explore new possibilities and push the boundaries of technology.",
     "I also have strong skills in UI/UX Design, allowing me to create solutions that are not only functional but also visually appealing and user-friendly. I'm currently open to job opportunities where I can contribute, learn, and grow.",
     "Feel free to connect with me on LinkedIn for content related to web development and programming.",
     "Let's collaborate and turn your ideas into reality!",
@@ -11,20 +11,23 @@ export default function About() {
   const skills = [
     "HTML",
     "CSS",
-    "JavaScript",
     "PHP",
-    "Java",
-    "CodeIgniter",
+    "JavaScript",
+    "TypeScript",
     "Laravel",
-    "TailwindCSS",
-    "Bootstrap",
-    "React JS",
-    "Next JS",
-    "MySQL",
+    "React",
+    "Next.js",
+    "Redux",
+    "Axios",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Shadcn UI",
     "Firebase",
+    "MySQL",
+    "PostgreSQL",
     "Git",
     "GitHub",
-    "Figma",
+    "Vite",
   ];
   return (
     <div
@@ -90,9 +93,9 @@ export default function About() {
               })}
             </div>
             <a
-              href="https://drive.google.com/file/d/1OqkteiuFcdM3PmYvFWuG36SVvjCutvHF/"
+              href="https://drive.google.com/file/d/1ByctJENbedG7JrHqCCO1fOXAAmAiYYLa/"
               target="_blank"
-              className="font-jakarta-sans dark-button inline-block rounded-xl px-6 py-2 text-xs font-semibold md:px-8 md:py-2 md:text-base"
+              className="font-jakarta-sans dark-button inline-block rounded-xl px-6 py-2 text-xs font-semibold md:px-8 md:py-2 lg:text-base"
             >
               My CV
             </a>

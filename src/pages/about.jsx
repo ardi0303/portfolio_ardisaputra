@@ -93,7 +93,7 @@ export default function About() {
               })}
             </div>
             <a
-              href="https://drive.google.com/file/d/1ByctJENbedG7JrHqCCO1fOXAAmAiYYLa/"
+              href="https://drive.google.com/file/d/1JBhSYogTwhzLJjH_LMnG19R2eKpfmUnA/"
               target="_blank"
               className="font-jakarta-sans dark-button inline-block rounded-xl px-6 py-2 text-xs font-semibold md:px-8 md:py-2 lg:text-base"
             >

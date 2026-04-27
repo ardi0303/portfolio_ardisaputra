@@ -8,8 +8,8 @@
 
 @theme {
   --font-jakarta-sans: "Plus Jakarta Sans", sans-serif;
-  --font-titan-one: "Titan One", cursive;
-  --font-nanum-pen-script: "Nanum Pen Script", cursive;
+  --font-titan-one: "Titan One", sans-serif;
+  --font-nanum-pen-script: "Nanum Pen Script", sans-serif;
   --color-primary-50: #e6f0fa;
   --color-primary-100: #cce0f5;
   --color-primary-200: #99c2eb;

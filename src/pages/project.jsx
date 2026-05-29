@@ -4,6 +4,8 @@ import imgProject1 from "@/assets/img/project1.png";
 import imgProject2 from "@/assets/img/project2.png";
 import imgProject3 from "@/assets/img/project3.png";
 import imgProject4 from "@/assets/img/project4.png";
+import imgProject5 from "@/assets/img/project5.png";
+import imgProject6 from "@/assets/img/project6.png";
 
 export default function Project() {
   const projects = [
@@ -22,7 +24,7 @@ export default function Project() {
       link: "https://readrealm.vercel.app/",
     },
     {
-      title: "Dian Nuswantoro University Collaboration (Admin)",
+      title: "Dian Nuswantoro University Collaboration (CMS)",
       description:
         "A web-based internal system built for universities to manage institutional partnerships through structured handling of MoU, MoA, and IA agreements. The platform offers features for administrators to monitor collaboration statuses, upload and update agreement documents, and organize activities under each agreement in a centralized dashboard.",
       image: imgProject3,
@@ -34,6 +36,20 @@ export default function Project() {
         "A clean and responsive landing page designed to introduce the university's collaboration platform to the public. It highlights key features, outlines types of partnerships (MoU, MoA, IA), and guides potential partners through the process of initiating collaborations. Built with accessibility and informative structure in mind.",
       image: imgProject4,
       link: "https://lkui-landing-cooperation.vercel.app/",
+    },
+    {
+      title: "SMARD (School Management and Resources Database",
+      description:
+        "A web-based application designed to manage school resources and administrative tasks. It provides features for tracking student information, managing class schedules, and organizing school events. The platform also includes a resource database for teachers and staff to access educational materials and tools efficiently.",
+      image: imgProject5,
+      link: "https://smard.id/",
+    },
+    {
+      title: "Tisera - Penyedia",
+      description:
+        "A web-based application designed to manage and display information about providers in the Tisera system. It allows administrators to add, update, and organize provider details, ensuring that users can easily access accurate and up-to-date information about available services. The platform also includes features for categorizing providers and facilitating user interactions.",
+      image: imgProject6,
+      link: "https://laravel.tisera.id/penyedia",
     },
   ];
   return (

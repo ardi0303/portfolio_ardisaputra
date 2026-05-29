@@ -27,7 +27,6 @@ export default function About() {
     "PostgreSQL",
     "Git",
     "GitHub",
-    "Vite",
   ];
   return (
     <div
